@@ -28,9 +28,10 @@ jobs:
                 apt search apptainer
                 sudo apt-get install -y apptainer
                 apptainer --version
+                lsb_release -a
 
             - name: Check out code for the container build
-              uses: actions/checkout@v4
+              uses: actions/checkout@v7
 
             - name: Install treep
               run: |
